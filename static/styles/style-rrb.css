@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* .navbar .top-logo {
+    height: 400px;
+    background-image: url("../images/reilly-ranch-logo.jpg");
+    background-size: 90% 400px;
+} */
+
+
+.top-logo {
+    height: 400px;
+    background-image: url("../images/reilly-ranch-logo.jpg");
+    background-size: 90% 400px;
+}
+
+/* .navbar background-image {
+    height: 400px;
+} */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 2.5em;
+    font-weight: 900;
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: #B0E0E6;
+    margin: 10%;
+}
+
+p {
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: -0.1px -0.1px 0 #FFFAFA, 0.1px -0.1px 0 #FFFAFA, -0.5px 0.5px 0 #FFFAFA, 0.5px 0.5px 0 #FFFAFA;
+}
+
+/*Base*/
+
+.nav-item {
+  background-color: #343A40;
+}
+
+.nav-link:hover {
+  background-color: #034f82;
+}
+
+/*Coaching page*/
+
+.container-2 {
+	border: 1px solid black;
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.flex-box-map-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    border: None;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+div.my-map {
+    position: relative;
+    overflow: hidden;
+    height: 100% !important;
+    flex: 2 !important;
+    border: 1px solid black !important;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.long-text {
+  margin: 10%;
+}
+
+ul, .page-body {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #B0E0E6;
+
+}
+
+h1 {
+  text-align: center;
+  color: #000080;
+  font-family: "Times New Roman";
+  font-size: 3.5rem;
+  font-weight: 1000;
+  text-shadow: -1px -1px 0 #FFFAFA, 1px -1px 0 #FFFAFA, -1px 1px 0 #FFFAFA, 1px 1px 0 #FFFAFA;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #000080;
+  font-family: "Times New Roman";
+  font-size: 2.5rem;
+  font-weight: 1000;
+  text-shadow: -1px -1px 0 #FFFAFA, 1px -1px 0 #FFFAFA, -1px 1px 0 #FFFAFA, 1px 1px 0 #FFFAFA;
+}
+
+span {
+  margin: auto;
+}
+
+/*------------------------------------*/
+
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 7%;
+    left: 0px;
+    z-index: 0;
+}
+.cb-slideshow:after {
+    content: '';
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 7%;
+    left: 0px;
+    color: transparent;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+    background-repeat: repeat-y;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li div h3 {
+    padding: 0;
+    line-height: 200px;
+
+    font-family: "Times New Roman";
+    font-size: 2.5rem;
+    font-weight: 1000;
+    text-shadow: -1px -1px 0 #FFFAFA, 1px -1px 0 #FFFAFA, -1px 1px 0 #FFFAFA, 1px 1px 0 #FFFAFA;
+
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background-image: url(../images/1.jpg);
+}
+.cb-slideshow li:nth-child(2) span {
+    background-image: url(../images/2.JPG);
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(../images/3.JPG);
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(../images/4.JPG);
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(../images/5.JPG);
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(../images/6.JPG);
+    animation-delay: 30s;
+}
+
+.cb-slideshow li:nth-child(2) div {
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) div {
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) div {
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) div {
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) div {
+    animation-delay: 30s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation {
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    12% { opacity: 1 }
+    15% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+  opacity: 1;
+}
+
+@media screen and (max-width: 1140px) {
+    .cb-slideshow li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) {
+    .cb-slideshow li div h3 { font-size: 80px }
+}
+
+/*Scale up image a bit and rotate it slightly*/
+@keyframes imageAnimation {
+  0% {
+      opacity: 0;
+      animation-timing-function: ease-in;
+  }
+  8% {
+      opacity: 1;
+      /*transform: scale(1.05);*/
+      animation-timing-function: ease-out;
+  }
+  17% {
+      opacity: 1;
+      /*transform: scale(1.1) rotate(3deg);*/
+  }
+  25% {
+      opacity: 0;
+      /*transform: scale(1.1) rotate(3deg);*/
+  }
+  100% { opacity: 0 }
+}
+
+/*For covid loader icon*/
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: blue transparent red transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.data-table {
+  background-color: #b7c1c4;
+  border-radius: 15px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px 0 0 0;
+  margin: 30px 0;
+  line-height: 20px;
+}
+
+.cb-slideshow div {
+    padding-bottom: 4%;
+}
+}
+
+
+
+
+
+
+
