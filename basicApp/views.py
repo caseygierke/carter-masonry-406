@@ -14,3 +14,5 @@ class ContactPageView(TemplateView):
 class ServicesPageView(TemplateView):
     template_name = 'services.html'
 
+class PortfolioPageView(TemplateView):
+    template_name = 'portfolio.html'

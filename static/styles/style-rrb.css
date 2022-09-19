@@ -294,6 +294,32 @@ span {
 .cb-slideshow div {
     padding-bottom: 4%;
 }
+
+/* Portfolio Page  */
+.portfolio-photo-container {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* max-width: 85%; */
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: auto;
+    /* overflow: wrap; */
+}
+
+.portfolio-photos {
+    max-height: 400px;
+    max-width: 90%;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.footer-image {
+    max-height: 600px;
+    max-width: 90%;
+    border: 3px solid black;
+    border-radius: 30%;
+    margin: 20px;
 }
 
 
